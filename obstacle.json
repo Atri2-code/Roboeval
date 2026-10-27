@@ -1,0 +1,70 @@
+{
+  "suite": "obstacle",
+  "episodes": 100,
+  "summaries": {
+    "random": {
+      "episodes": 100,
+      "success_rate": 0.0,
+      "success_ci_low": 0.0,
+      "success_ci_high": 0.03699480747600191,
+      "median_steps_to_success": null,
+      "mean_path_efficiency": null,
+      "mean_effort": 3.016079200068727,
+      "mean_smoothness": 2.0010563602911673,
+      "collision_rate": 0.22
+    },
+    "jacobian": {
+      "episodes": 100,
+      "success_rate": 0.48,
+      "success_ci_low": 0.38464384320080547,
+      "success_ci_high": 0.5768359490982345,
+      "median_steps_to_success": 111.0,
+      "mean_path_efficiency": 0.8667706686417556,
+      "mean_effort": 3.6491295239933903,
+      "mean_smoothness": 0.011196040073242541,
+      "collision_rate": 0.61
+    },
+    "jacobian_noisy": {
+      "episodes": 100,
+      "success_rate": 0.5,
+      "success_ci_low": 0.40382982859014716,
+      "success_ci_high": 0.5961701714098528,
+      "median_steps_to_success": 138.5,
+      "mean_path_efficiency": 0.7342432890758662,
+      "mean_effort": 4.161281263433853,
+      "mean_smoothness": 0.7195327910487103,
+      "collision_rate": 0.64
+    },
+    "avoid": {
+      "episodes": 100,
+      "success_rate": 0.28,
+      "success_ci_low": 0.2013955916759837,
+      "success_ci_high": 0.37488212361345724,
+      "median_steps_to_success": 100.5,
+      "mean_path_efficiency": 0.9002302291173087,
+      "mean_effort": 3.574810146277325,
+      "mean_smoothness": 0.012115165407979094,
+      "collision_rate": 0.58
+    },
+    "behaviour_cloned": {
+      "episodes": 100,
+      "success_rate": 0.48,
+      "success_ci_low": 0.38464384320080547,
+      "success_ci_high": 0.5768359490982345,
+      "median_steps_to_success": 122.5,
+      "mean_path_efficiency": 0.8632536184085041,
+      "mean_effort": 3.486143217818547,
+      "mean_smoothness": 0.011657571658276808,
+      "collision_rate": 0.61
+    }
+  },
+  "gate": {
+    "candidate": "avoid",
+    "baseline": "jacobian",
+    "passed": false,
+    "mean_difference": -0.2,
+    "ci_low": -0.28,
+    "ci_high": -0.13,
+    "reason": "candidate is worse than baseline: success change -0.200 (95% CI -0.280 to -0.130)"
+  }
+}
